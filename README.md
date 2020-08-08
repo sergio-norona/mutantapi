@@ -97,18 +97,22 @@ Response Body
 Response Code 
 403-Forbidden
 
-Response Body
-{
-    "isMutant": true,
-    "updatedStats": true,
-    "savedToDatabase": true
-}
+Response Body  
+{  
+    "isMutant": true,  
+    "updatedStats": true,  
+    "savedToDatabase": true  
+}  
 
 
 
 ## Code Coverage
 
 ```bash
+$ coverage run test_mutantvalidation.py
+
+$ coverage report
+
 Name                       Stmts   Miss  Cover
 ----------------------------------------------
 mutants\__init__.py          132      5    96%
