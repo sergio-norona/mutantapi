@@ -2,30 +2,24 @@
 
 mutantapi is a Python RESTful api  with docker for dna mutant sequence validation for Magneto recruitments.
 
-\
-\
+## Local environment Requirements
 
-# Requirements
+- Python 3.x
+- Docker
+- Mysql - xampp
 
-## Local environment
+## Cloud environment Requirements
 
-Python 3.x\
-Docker\
-Mysql - xampp\
-
-## Cloud environment
-
-AWS ElasticBeanStalk environment with Docker running on 64bit Amazon Linux 2/3.1.0\
-Mysql RDS\
+- AWS ElasticBeanStalk environment with Docker running on 64bit Amazon Linux 2/3.1.0
+- Mysql RDS
 
 ## Tools and Installation
 
-docker\
-python\
-mysql - xampp\
-jmeter - for load tests\
-postman - for testing rest request\
-
+- docker
+- python
+- mysql - xampp
+- jmeter - for load tests
+- postman - for testing rest request
 
 
 # Setup
@@ -33,11 +27,11 @@ postman - for testing rest request\
 ## Local Environment Python Only - without docker
 
 ```bash
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
-- Start apache and mysql services from xampp console\
-- Configure your 127.0.0.0:3306 as your default mysql host at db.yaml file or your own mysql host, port and credentials.\
-- Replace config.yaml with config-local-env-without-docker.yaml content\
+- Start apache and mysql services from xampp console
+- Configure your 127.0.0.0:3306 as your default mysql host at db.yaml file or your own mysql host, port and credentials.
+- Replace config.yaml with config-local-env-without-docker.yaml content
 
 ```bash
 $ python run.py
@@ -50,8 +44,8 @@ $ python run.py
 - Replace config.yaml with config-local-env-without-docker.yaml content\
 
 ```bash
-docker-compose build
-docker-compose up
+$ docker-compose build
+$ docker-compose up
 ```
 
 
@@ -59,9 +53,10 @@ docker-compose up
 # Usage
 
 ## mutantapi urls
-Amazon AWS: http://magnetomutants.us-east-2.elasticbeanstalk.com\
-Local environment docker: http://127.0.0.1:5000\
-Local environment without docker: http://127.0.0.1:8080\
+
+- Amazon AWS: http://magnetomutants.us-east-2.elasticbeanstalk.com
+- Local environment docker: http://127.0.0.1:5000
+- Local environment without docker: http://127.0.0.1:8080
 
 ## Example request
 
@@ -113,12 +108,14 @@ Response Body
 
 ## Code Coverage
 
+```bash
 Name                       Stmts   Miss  Cover
 ----------------------------------------------
 mutants\__init__.py          132      5    96%
 test_mutantvalidation.py      93      0   100%
 ----------------------------------------------
 TOTAL                        225      5    98%
+```
 
 ## Unit tests
 
