@@ -13,7 +13,7 @@ Python RESTful api  with docker for dna mutant sequence validation for Magneto r
 - AWS ElasticBeanStalk environment with Docker running on 64bit Amazon Linux 2/3.1.0
 - Mysql RDS
 
-## Tools and Installation
+## Tools and Installs
 
 - docker
 - python
@@ -29,9 +29,13 @@ Python RESTful api  with docker for dna mutant sequence validation for Magneto r
 ```bash
 $ pip install -r requirements.txt
 ```
+- Install xampp and setup up a new mysql instance
 - Start apache and mysql services from xampp console
+- If database is not exist yet, use emptydatabasescript/mutants.sql for importing an empty database structure to mysql
+- Create a user and credentials for the new database
 - Configure your 127.0.0.0:3306 as your default mysql host at db.yaml file or your own mysql host, port and credentials.
 - Replace config.yaml with config-local-env-without-docker.yaml content
+
 
 ```bash
 $ python run.py
@@ -55,7 +59,7 @@ $ docker-compose up
 ## mutantapi urls
 
 - Amazon AWS: http://magnetomutants.us-east-2.elasticbeanstalk.com
-- Local environment docker: http://127.0.0.1:5000
+- Local environment docker: http://127.0.0.1:5000 (use a different port in docker-compose.yml if you are running two or more services at the same time)
 - Local environment without docker: http://127.0.0.1:8080
 
 ## Example request
