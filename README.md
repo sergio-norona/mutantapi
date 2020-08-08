@@ -134,13 +134,15 @@ TOTAL                        225      5    98%
 
 ```bash
 $ python test_mutantvalidation.py
-```
 
 ................
 ----------------------------------------------------------------------
 Ran 16 tests in 4.405s
 
 OK
+```
+
+
 
 ## Performance Tests
 
