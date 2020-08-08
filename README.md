@@ -1,6 +1,6 @@
 # mutantapi
 
-mutantapi is a Python RESTful api  with docker for dna mutant sequence validation for Magneto recruitments.
+Python RESTful api  with docker for dna mutant sequence validation for Magneto recruitments.
 
 ## Local environment Requirements
 
