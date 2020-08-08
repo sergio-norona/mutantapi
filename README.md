@@ -58,7 +58,7 @@ $ docker-compose up
 
 ## mutantapi urls
 
-- Amazon AWS: http://magnetomutants.us-east-2.elasticbeanstalk.com
+- Amazon AWS: -
 - Local environment docker: http://127.0.0.1:5000 (use a different port in docker-compose.yml if you are running two or more services at the same time)
 - Local environment without docker: http://127.0.0.1:8080
 
