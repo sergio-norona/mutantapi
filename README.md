@@ -69,6 +69,7 @@ Each string must have the same array length where this belong. The sequence only
 POST → /mutant/   
 headers → Content-Type → application/json  
 Request Body  
+```json
 {  
     "dna": [  
         "ATGCGA",  
@@ -78,31 +79,39 @@ Request Body
         "CCCCTA",  
         "TCACTG"  
     ]  
-}  
+}
+```
+  
 
 ## It is mutant dna response
 
 Response Code   
 200-OK  
 
-Response Body  
+Response Body 
+```json
 {  
     "isMutant": false,  
     "updatedStats": true,  
     "savedToDatabase": true  
 }  
+```
+
 
 ## It is not mutant dna response  
 
 Response Code  
 403-Forbidden  
 
-Response Body   
+Response Body  
+```json
 {    
     "isMutant": true,   
     "updatedStats": true,  
     "savedToDatabase": true  
-}  
+} 
+```
+ 
 
 
 
