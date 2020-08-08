@@ -1,0 +1,4 @@
+mysql_host: 'host:port'
+mysql_user: 'mutantroot'
+mysql_password: 'mutantroot'
+mysql_database: 'mutants'
