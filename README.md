@@ -24,7 +24,7 @@ mutantapi is a Python RESTful api  with docker for dna mutant sequence validatio
 
 # Setup
 
-## Local Environment Python Only - without docker
+## Local environment Python only - without docker
 
 ```bash
 $ pip install -r requirements.txt
@@ -37,11 +37,11 @@ $ pip install -r requirements.txt
 $ python run.py
 ```
 
-## Local Environment With docker
+## Local environment with docker
 
-- Start apache and mysql services from xampp console\
-- Configure your local ip in db.yaml running ipconfig on cmd console\
-- Replace config.yaml with config-local-env-without-docker.yaml content\
+- Start apache and mysql services from xampp console
+- Configure your local ip in db.yaml running ipconfig on cmd console
+- Replace config.yaml with config-local-env-without-docker.yaml content
 
 ```bash
 $ docker-compose build
@@ -60,46 +60,46 @@ $ docker-compose up
 
 ## Example request
 
-A dna sequence as next JSON format:
+A dna sequence as next JSON format:  
 
-{"dna": [[string], [string], [string], ...]}
+{"dna": [[string], [string], [string], ...]}  
 
-Each string must have the same array length where this belong. The sequence only can have next chars: A, T, C, G.
+Each string must have the same array length where this belong. The sequence only can have next chars: A, T, C, G.  
 
-POST → /mutant/ 
-headers → Content-Type → application/json
-Request Body
-{
-    "dna": [
-        "ATGCGA",
-        "CAGTGC",
-        "TTATGT",
-        "AGAAGG",
-        "CCCCTA",
-        "TCACTG"
-    ]
-}
+POST → /mutant/   
+headers → Content-Type → application/json  
+Request Body  
+{  
+    "dna": [  
+        "ATGCGA",  
+        "CAGTGC",  
+        "TTATGT",  
+        "AGAAGG",  
+        "CCCCTA",  
+        "TCACTG"  
+    ]  
+}  
 
 ## It is mutant dna response
 
-Response Code 
-200-OK
-
-Response Body
-{
-    "isMutant": false,
-    "updatedStats": true,
-    "savedToDatabase": true
-}
-
-## It is not mutant dna response
-
-Response Code 
-403-Forbidden
+Response Code   
+200-OK  
 
 Response Body  
 {  
-    "isMutant": true,  
+    "isMutant": false,  
+    "updatedStats": true,  
+    "savedToDatabase": true  
+}  
+
+## It is not mutant dna response  
+
+Response Code  
+403-Forbidden  
+
+Response Body   
+{    
+    "isMutant": true,   
     "updatedStats": true,  
     "savedToDatabase": true  
 }  
