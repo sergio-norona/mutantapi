@@ -2,6 +2,8 @@
 
 mutantapi is a Python RESTful api  with docker for dna mutant sequence validation for Magneto recruitments.
 
+
+
 # Requirements
 
 ## Local environment
@@ -22,6 +24,8 @@ python
 mysql - xampp
 jmeter - for load tests
 postman - for testing rest request
+
+
 
 # Setup
 
@@ -48,6 +52,8 @@ $ python run.py
 docker-compose build
 docker-compose up
 ```
+
+
 
 # Usage
 
@@ -102,7 +108,9 @@ Response Body
     "savedToDatabase": true
 }
 
-# Code Coverage
+
+
+## Code Coverage
 
 Name                       Stmts   Miss  Cover
 ----------------------------------------------
@@ -111,7 +119,7 @@ test_mutantvalidation.py      93      0   100%
 ----------------------------------------------
 TOTAL                        225      5    98%
 
-# Unit tests
+## Unit tests
 
 ```bash
 $ python test_mutantvalidation.py
@@ -123,7 +131,7 @@ Ran 16 tests in 4.405s
 
 OK
 
-# Performance Tests
+## Performance Tests
 
 Jmeter setup
 
@@ -133,7 +141,7 @@ Local Jmeter load test
 
 - pending to complete
 
-# statsapi
+## statsapi
 
 Service with statistics about validated dna's
 
